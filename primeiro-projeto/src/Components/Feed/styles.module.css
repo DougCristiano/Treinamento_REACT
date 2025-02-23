@@ -1,0 +1,111 @@
+.feed {
+  width: 842px;
+  height: auto;
+  border-radius: 20px;
+  background: #0e0e1b;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  padding: 2%;
+  justify-content: flex-start;
+  gap: 3rem;
+  
+
+}
+.feed .conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.feed .identificacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.feed .organizacao {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feedImage {
+  width: 90px;
+  height: 100px;
+  border-width: 5px;
+  background: #d9d9d9;
+  border: 5px solid #004b96;
+  border-radius: 100%;
+}
+
+.feed h3 {
+  width: auto;
+  height: auto;
+  font-family: Inter;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.feed p {
+  width: auto;
+  height: auto;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+  color: gray;
+}
+
+
+
+.texto{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 1rem ;
+}
+
+.feed h4 {
+  font-family: Inter;
+  font-weight: 700px;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.feed textarea {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  width: 825px;
+  height: 112px;
+  border-radius: 8px;
+  border: 3px solid #036fdb;
+  border-width: 3px;
+  background-color: #dddddd;
+  padding: 1%;
+}
+
+
+.feed button {
+  width: 139px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #036fdb;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    color: red;
+  }
+}

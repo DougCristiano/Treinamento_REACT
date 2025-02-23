@@ -1,0 +1,25 @@
+.like{
+    display: flex;
+    gap: 0.3rem;
+    color: #DDDDDD;
+}
+
+.likes {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color:grey
+  }
+  
+
+  .liked {
+    color: blue;
+  }
+  
+
+  .likedImage {
+    opacity: 1 !important;
+  }
+  .unlikedImage {
+    opacity: 0.6 !important;
+  }

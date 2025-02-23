@@ -1,0 +1,51 @@
+.container {
+  width: 356px;
+  height: 461px;
+  top: 129px;
+  left: 64px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-radius: 5%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-image: url(../../assets/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  margin: 2%;
+}
+.perfil {
+  width: 115px;
+  height: 130px;
+  border-width: 5px;
+  background: #d9d9d9;
+  border: 5px solid #004b96;
+  border-radius: 100%;
+  position: relative;
+  bottom: 50px;
+}
+
+.nome {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 36px;
+  line-height:1%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.descricao {
+  width: auto;
+  height: 28px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29.05px;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: #999999;
+  margin-bottom: 15%;
+}
