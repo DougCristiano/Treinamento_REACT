@@ -103,7 +103,7 @@ function Feed() {
           />
           <div className={styles.organizacao}>
             <h3>{nomes[1]}</h3>
-            <p>Designer</p>
+            <p>Estudante de Designer</p>
           </div>
         </div>
         <TempoPublicado horarioPublicacao={horarioPublicacaoPedro} />
