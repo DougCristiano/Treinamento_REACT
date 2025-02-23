@@ -47,52 +47,52 @@ function Feed() {
 
   return (
     <div className={styles.feed}>
-        <div className={styles.conteiner}>
-          <div className={styles.identificacao}>
-            <img
-              className={styles.feedImage}
-              src={perfilImage}
-              alt="Imagem de Douglas"
-            />
-            <div className={styles.organizacao}>
-              <h3>{nomes[0]}</h3>
-              <p>Estudante de Sistemas da Computação</p>
-            </div>
-          </div>
-          <TempoPublicado horarioPublicacao={horarioPublicacaoDouglas} />
-        </div>
-        <p>
-          Às vezes, a vida te dá limões, mas outras vezes te dá um abacaxi inteiro
-          e você fica tipo: 'o que eu faço com isso?' 🍍😂 #DesafiosDaVida
-          #RindoParaNãoChorar
-        </p>
-        <div className={styles.texto}>
-          <h4>Deixe seu Feedback</h4>
-          <textarea
-            name="feedback"
-            placeholder="Escreva seu comentário ..."
-            value={comentarioDouglas}
-            onChange={handleComentarioChangeDouglas}
+      <div className={styles.conteiner}>
+        <div className={styles.identificacao}>
+          <img
+            className={styles.feedImage}
+            src={perfilImage}
+            alt="Imagem de Douglas"
           />
+          <div className={styles.organizacao}>
+            <h3>{nomes[0]}</h3>
+            <p>Estudante de Sistemas da Computação</p>
+          </div>
         </div>
-        <button onClick={handleComentarDouglas}>Comentar</button>
-        <Comentarios
-          comentarios={comentariosDouglas}
-          nome={nomes[0]}
-          imagem={perfilImage}
-          comentariosPredefinidos={[
-            {
-              id: "pedro",
-              nome: "Pedro",
-              texto:
-                "Muito interessante a abordagem utilizada. Já estou aplicando esses conceitos nos meus projetos.",
-              imagem: comentario2,
-              initialLikes: 12,
-              horarioPublicacao: new Date(new Date().getTime() - 3600000),
-        
-            },
-          ]}
+        <TempoPublicado horarioPublicacao={horarioPublicacaoDouglas} />
+      </div>
+      <p>
+        Às vezes, a vida te dá limões, mas outras vezes te dá um abacaxi inteiro
+        e você fica tipo: 'o que eu faço com isso? Por isso estou aprendendo
+        REACT que é uma ótima ferramenta para quem está tentando ser
+        Full-Stack!' 🍍😂 #DesafiosDaVida #RindoParaNãoChorar
+      </p>
+      <div className={styles.texto}>
+        <h4>Deixe seu Feedback</h4>
+        <textarea
+          name="feedback"
+          placeholder="Escreva seu comentário ..."
+          value={comentarioDouglas}
+          onChange={handleComentarioChangeDouglas}
         />
+      </div>
+      <button onClick={handleComentarDouglas}>Comentar</button>
+      <Comentarios
+        comentarios={comentariosDouglas}
+        nome={nomes[0]}
+        imagem={perfilImage}
+        comentariosPredefinidos={[
+          {
+            id: "pedro",
+            nome: "Pedro",
+            texto:
+              "Muito interessante a abordagem utilizada. Já estou aplicando esses conceitos nos meus projetos.",
+            imagem: comentario2,
+            initialLikes: 12,
+            horarioPublicacao: new Date(new Date().getTime() - 3600000),
+          },
+        ]}
+      />
       <br />
       <div className={styles.conteiner}>
         <div className={styles.identificacao}>
@@ -109,7 +109,9 @@ function Feed() {
         <TempoPublicado horarioPublicacao={horarioPublicacaoPedro} />
       </div>
       <p>
-      React é aquela ferramenta que te faz pensar: 'Como eu vivia sem isso antes?' 🚀✨ Componentes reutilizáveis, estado dinâmico e uma comunidade incrível fazem tudo valer a pena. #ReactJS #Frontend #WebDevelopment
+        React é aquela ferramenta que te faz pensar: 'Como eu vivia sem isso
+        antes?' 🚀✨ Componentes reutilizáveis, estado dinâmico e uma comunidade
+        incrível fazem tudo valer a pena. #ReactJS #Frontend #WebDevelopment
       </p>
       <div className={styles.texto}>
         <h4>Deixe seu Feedback</h4>
@@ -126,14 +128,14 @@ function Feed() {
         nome={nomes[0]}
         imagem={perfilImage}
         comentariosPredefinidos={[
-          {id: "fernanda",
+          {
+            id: "fernanda",
             nome: "Fernanda",
             texto:
               "Excelente conteúdo! Muito bem explicado e fácil de entender. Parabéns pelo trabalho!",
             imagem: comentario1,
             initialLikes: 7,
             horarioPublicacao: new Date(new Date().getTime() - 1200000),
-
           },
         ]}
       />
